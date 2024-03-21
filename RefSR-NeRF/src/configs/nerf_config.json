@@ -1,0 +1,10 @@
+{
+  "depth_samples": 64,
+  "hierarchical_samples": 128,
+  "multires_positions": 10,
+  "multires_directions": 4,
+  "coarse_net_depth": 8,
+  "coarse_net_width": 256,
+  "fine_net_depth": 8,
+  "fine_net_width": 256
+}

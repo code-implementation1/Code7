@@ -1,0 +1,21 @@
+{
+    "is_ndc": true,
+    "linear_disparity_sampling": false,
+    "near": 0.0,
+    "far": 1.0,
+    "intrinsic": [
+        407.5657958984375,
+        0.0,
+        252.0,
+        0.0,
+        407.5657958984375,
+        189.0,
+        0.0,
+        0.0,
+        1.0
+    ],
+    "height": 378,
+    "width": 504,
+    "focal": 407.5657958984375,
+    "white_background": false
+}

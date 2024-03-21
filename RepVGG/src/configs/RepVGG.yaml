@@ -1,0 +1,80 @@
+# ===== Main settings ===== #
+train_url: repvgg/models
+data_url: imagenet
+
+# ===== Continue training or model inference ===== #
+exclude_epoch_state: 0
+pretrained: null
+continues: null
+
+# ===== Checkpoints setting ===== #
+keep_checkpoint_max: 20
+save_every: 1000
+keep_best_checkpoints_max: 5
+
+
+# ===== Model architecture ===== #
+num_classes: 1000
+arch: RepVGG-B0
+image_size: 224
+deploy: 0
+
+# ===== Training duration settings ===== #
+epochs: 120
+batch_size: 32
+start_epoch: 0
+start_step: 0
+
+# ===== Optimizer settings ===== #
+optimizer: momentum
+warmup_length: 0
+warmup_lr: 0.00000007
+base_lr: 0.1
+min_lr: 0.0
+momentum: 0.9
+beta: [0.9, 0.999]
+lr_scheduler: cosine_lr
+lr_adjust: 30
+lr_gamma: 0.97
+weight_decay: 0.0001
+eps: 0.00000001
+
+# ===== Train one step parameters (Exponential Moving Average and loss scale) ===== #
+loss_scale: 1024
+is_dynamic_loss_scale: 1
+with_ema: 0
+ema_decay: 0.9999
+
+# ===== Model optimization ===== #
+amp_level: O0
+
+# ===== Hardware settings ===== #
+device_target: GPU
+device_num: 1
+
+# ===== Data loading setting ===== #
+num_parallel_workers: 4
+prefetch: 15
+cache_session_id: null
+use_data_sink: 0
+
+# ===== Data augmentation settings ===== #
+aug_type: weak
+
+auto_augment: null
+interpolation: bilinear
+re_prob: 0.0
+re_mode: pixel
+re_count: 1
+
+mix_up: 0.0
+cutmix: 0.0
+mixup_prob: 0.0
+switch_prob: 0.0
+mixup_mode: batch
+
+label_smoothing: 0.0
+
+# ===== Other ===== #
+brief: null
+seed: 0

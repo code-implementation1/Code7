@@ -1,0 +1,19 @@
+{
+  "train_rays_batch_size": 4000,
+  "val_rays_batch_size": 378,
+  "nerf_chunk": 30000,
+
+  "epochs": 600,
+
+  "val_epochs_freq": 1,
+
+  "optimizer": "adam",
+  "lr": 0.0001,
+  "lr_decay_rate": 0.1,
+
+  "perturbation": true,
+  "raw_noise_std": 1.0,
+
+  "precrop_train_frac": 0.5,
+  "precrop_train_epochs": 0
+}

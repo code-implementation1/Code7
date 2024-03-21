@@ -1,0 +1,9 @@
+{
+  "data_type": "llff",
+  "white_background": false,
+  "is_ndc": true,
+  "linear_disparity_sampling": false,
+  "spherify": false,
+  "factor": 4,
+  "llffhold": 8
+}
